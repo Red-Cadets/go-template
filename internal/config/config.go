@@ -23,8 +23,8 @@ type Configuration struct {
 type WebConfiguration struct {
 	Port     string `default:"8080"`
 	Timeout  int    `default:"24"`
-	Username string `default:"brick"`
-	Password string `default:"brick1337"`
+	Username string `default:"username"`
+	Password string `default:"password"`
 }
 
 // DatabaseConfiguration is the required parameters to set up a DB instance
