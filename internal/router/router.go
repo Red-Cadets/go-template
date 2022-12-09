@@ -1,8 +1,8 @@
 package router
 
 import (
-	"{{cookiecutter.app_name}}/internal/api"
-	"{{cookiecutter.app_name}}/internal/storage"
+	"{{cookiecutter.project_slug}}/internal/api"
+	"{{cookiecutter.project_slug}}/internal/storage"
 	"net/http"
 	"time"
 

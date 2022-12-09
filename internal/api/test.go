@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"{{cookiecutter.app_name}}/internal/models"
+	"{{cookiecutter.project_slug}}/internal/models"
 
 	"github.com/gin-gonic/gin"
 )

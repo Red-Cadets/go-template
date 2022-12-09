@@ -1,12 +1,12 @@
 package main
 
 import (
-	"{{cookiecutter.app_name}}/internal/config"
-	"{{cookiecutter.app_name}}/internal/models"
-	"{{cookiecutter.app_name}}/internal/router"
-	"{{cookiecutter.app_name}}/internal/storage"
-	"{{cookiecutter.app_name}}/pkg/constants"
-	"{{cookiecutter.app_name}}/pkg/logger"
+	"{{cookiecutter.project_slug}}/internal/config"
+	"{{cookiecutter.project_slug}}/internal/models"
+	"{{cookiecutter.project_slug}}/internal/router"
+	"{{cookiecutter.project_slug}}/internal/storage"
+	"{{cookiecutter.project_slug}}/pkg/constants"
+	"{{cookiecutter.project_slug}}/pkg/logger"
 
 	"fmt"
 	"net/http"
@@ -56,7 +56,7 @@ func main() {
 			logger.Errorf("Error start http server: %s", err)
 		})
 
-		msg := fmt.Sprintf("{{cookiecutter.app_name}} is up and running on '%s' in '%s' mode", cfg.Server.Port, cfg.Server.Env)
+		msg := fmt.Sprintf("{{cookiecutter.project_slug}} is up and running on '%s' in '%s' mode", cfg.Server.Port, cfg.Server.Env)
 		fmt.Println(msg)
 
 		return serverGroup.Run()

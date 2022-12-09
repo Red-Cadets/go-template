@@ -16,8 +16,8 @@ var logger = logrus.New()
 
 const (
 	skipFrameCount    = 4
-	splitAfterPkgName = "{{cookiecutter.app_name}}"
-	logFileName       = "{{cookiecutter.app_name}}.log"
+	splitAfterPkgName = "{{cookiecutter.project_slug}}"
+	logFileName       = "{{cookiecutter.project_slug}}.log"
 )
 
 func init() {

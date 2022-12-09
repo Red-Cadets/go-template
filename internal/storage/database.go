@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"{{cookiecutter.app_name}}/internal/config"
+	"{{cookiecutter.project_slug}}/internal/config"
 	"fmt"
 	"io"
 	"log"
@@ -55,7 +55,7 @@ func New(db *gorm.DB) *Database {
 }
 
 func getWriter() io.Writer {
-	file, err := os.OpenFile("{{cookiecutter.app_name}}.db.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	file, err := os.OpenFile("{{cookiecutter.project_slug}}.db.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		return os.Stdout
 	} else {
