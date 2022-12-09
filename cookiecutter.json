@@ -1,0 +1,5 @@
+{
+  "project_name": "Awesome go project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "Created from https://github.com/Red-Cadets/go-template.git",
+}
